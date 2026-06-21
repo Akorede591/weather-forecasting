@@ -15,7 +15,7 @@ st.title("☀️ Weather Forecast Performance: MI vs PSO on Random Forest")
 st.write("Compare standard Random Forest regressions against Mutual Information and Particle Swarm Optimization feature selections.")
 
 # Hardcoded absolute path to your verified dataset
-DATASET_PATH = r"C:\Users\USER\Desktop\Weather forecasting2\weather_prediction_dataset.csv"
+DATASET_PATH = "weather_prediction_dataset.csv"
 TARGET_COLUMN = "HEATHROW_temp_mean"
 
 # Check if file exists safely
@@ -122,3 +122,7 @@ else:
             ax.set_ylabel("Best Swarm R² Score")
             ax.grid(True)
             st.pyplot(fig)
+
+
+
+            
